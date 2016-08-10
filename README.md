@@ -15,4 +15,4 @@ It also contains an int at the end, which is the id of the joystick that is bein
 - Better joystick shading
 
 ##For more info...
-Visit the instructable I made for this!: 
+Visit the instructable I made for this!: http://www.instructables.com/id/A-Simple-Android-UI-Joystick/
