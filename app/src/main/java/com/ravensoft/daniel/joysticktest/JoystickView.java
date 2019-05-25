@@ -1,14 +1,11 @@
 package com.ravensoft.daniel.joysticktest;
 
 import android.content.Context;
-import android.graphics.AvoidXfermode;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.graphics.Path;
 import android.graphics.PorterDuff;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
