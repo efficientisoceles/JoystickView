@@ -16,3 +16,6 @@ It also contains an int at the end, which is the id of the joystick that is bein
 
 ##For more info...
 Visit the instructable I made for this!: http://www.instructables.com/id/A-Simple-Android-UI-Joystick/
+
+
+This repo is deprecated... I have not touched it in a VERY long time.
