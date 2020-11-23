@@ -34,13 +34,15 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
         hatRadius = Math.min(getWidth(), getHeight()) / 5;
     }
 
-    public JoystickView(Context context)
+     public JoystickView(Context context)
     {
         super(context);
         getHolder().addCallback(this);
         setOnTouchListener(this);
         if(context instanceof JoystickListener)
             joystickCallback = (JoystickListener) context;
+
+        makeBackgroundTransparent();
     }
 
     public JoystickView(Context context, AttributeSet attributes, int style)
@@ -50,6 +52,8 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
         setOnTouchListener(this);
         if(context instanceof JoystickListener)
             joystickCallback = (JoystickListener) context;
+
+        makeBackgroundTransparent();
     }
 
     public JoystickView (Context context, AttributeSet attributes)
@@ -59,6 +63,15 @@ public class JoystickView extends SurfaceView implements SurfaceHolder.Callback,
         setOnTouchListener(this);
         if(context instanceof JoystickListener)
             joystickCallback = (JoystickListener) context;
+
+        makeBackgroundTransparent();
+    }
+
+    private void makeBackgroundTransparent()
+    {
+        this.setBackgroundColor(Color.TRANSPARENT);
+        this.setZOrderOnTop(true);
+        getHolder().setFormat(PixelFormat.TRANSPARENT);
     }
 
     private void drawJoystick(float newX, float newY)
